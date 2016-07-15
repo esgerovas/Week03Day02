@@ -1,0 +1,51 @@
+1) Düzgün ve oxunaqli CSS kodu yazmaq üçün lazim olabilecek 10 qayda yazin
+2) Font Awesome kimi ikon fontlari varmi? Varsa qisaca haqlarinda melumat verin
+3) Azerbaycan sriftlerini destekleyen 10 eded font ailesinin adini ve istifade qaydasini yazin
+
+<!--------------------------Sual 1------------------------>
+1. Taglerin default xüsusiyyetlerini sifirlamaq. Bunun üçün hazir reset, normalize css kodlarindan istifade etmek daha yaxsidir.
+2. kodlari yazmamisdan qabaq onlarin planini, strukturunu hazirlamaq.
+3. HTML de taglare uygun ardicilliqda css kodlarini yazmaq.
+4. tagin property-lerini yazarken  elifba sirasina diqqet etmek.
+5. Commentlerden istifade etmek
+6. kodlarda tekrarciliga yol vermemek. yeni eyni xususiyyetli tagleri qruplasdirmaq
+7. taglere class veya id ile adlardirarken adlandirmanin movzuya uygun olmasi
+8. bezi kodlari yazarken bir setirde yazmaq. yeni
+	{background-color:red;
+	background-image:url('image.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;}
+evezine
+	background: red url('image.jpg') no-repeat top left;
+formasinda yazmaq.
+
+
+
+<!--------------------------Sual 2------------------------>
+Beli var. meselen:
+	Entypo, Iconic, Brandico.
+	
+<!--------------------------Sual 3------------------------>
+	1.ArialNU
+	2.Arkitextura
+	3.Aphrodite
+	4.Cambria
+	5.Europe
+	6.Rockwell
+	7.Ultima
+	8.Arrus
+	9.Barmeno
+	10.Clear Sans
+istifadesi:
+
+1.Ist?diyimiz font ail?sinin arxiv faylini yükl?m?k
+2.daxilindeki fayli hazirladigimiz saytin papkasindaki fonts papkasina elave etmek
+3.css faylinda bu font faylin yerini mü?yy?nl?sdirm?k. M?s?l?n,
+  @font-face {
+    font-family: 'Cambria';
+    src: url('../fonts/Cambria.ttf?v=1.000');  ------> bu hiss?d? faylin directory-si göst?rilir ? isar?sind?n sonra is? versiyasi gost?rilir.
+   }
+4.Sonra is? lazimi yerd? istifad? ed? bil?rik.M?s?l?n:
+p{
+font-family: 'Cambria',sans-serif;
+}
